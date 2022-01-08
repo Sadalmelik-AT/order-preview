@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --pale-blue: #e0e8ff;
+  --bright-blue: #3829e0;
+  --very-pale-blue: #f5f7ff;
+  --desaturated-blue: #7280a7;
+  --dark-blue: #1f2f56;
+  --red-hat: "Red Hat Display";
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--red-hat);
+}
+
+.post-card img {
+  max-width: 100%;
+  object-fit: cover;
+  height: auto;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.reverse {
+  transform: scale(-1); /*flip image upside down*/
+  margin: 0;
+  opacity: 0.6;
+  margin-top: -180px;
+}
+
+.post-card {
+  width: 350px;
+  background-color: #fff;
+  margin-top: -250px;
+  margin-left: -205px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 15px;
+}
+
+.order-summury {
+  text-align: center;
+}
+.order-summury h2 {
+  margin: 20px;
+  color: var(--dark-blue);
+  font-weight: 900;
+}
+
+.order-summury p {
+  margin: 0 auto;
+  font-size: 1rem;
+  width: 70%;
+  margin-bottom: 20px;
+  color: var(--desaturated-blue);
+  font-weight: 500;
+}
+
+.annual-plan {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: var(--very-pale-blue);
+  width: 80%;
+  margin: 0 auto;
+  height: 60px;
+  border-radius: 10px;
+}
+.annual-plan img {
+  margin-top: 10%;
+}
+.annual-plan h4 {
+  font-weight: 900;
+}
+.annual-plan .plan p {
+  color: var(--desaturated-blue);
+}
+
+.buttons {
+  margin: 25px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  width: 80%;
+  background: var(--bright-blue);
+  color: var(--very-pale-blue);
+  border-radius: 10px;
+  height: 40px;
+  border: none;
+  margin-bottom: 12.5px;
+  font-weight: 700;
+  box-shadow: 0 5px 15px rgb(148, 144, 144);
+}
+.buttons a {
+  text-decoration: none;
+  color: var(--desaturated-blue);
+}
+
+/* Hovering effects */
+
+.link a:hover {
+  color: var(--desaturated-blue);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #5a4cf3;
+  cursor: pointer;
+}
+.buttons a:hover {
+  color: var(--dark-blue);
+  font-weight: 900;
+}
